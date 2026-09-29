@@ -14,7 +14,7 @@ import './App.css';
 
 
 /**
- * DEXTRA — Root Application
+ * CHIRAVOX — Root Application
  *
  * Route map:
  *   /          → Landing page (public marketing page)
@@ -51,7 +51,7 @@ const NotFound = () => (
     <p style={{ color: '#8fa8bf', marginBottom: '28px' }}>
       The page you're looking for doesn't exist.
     </p>
-    <a href="/" className="btn btn-primary">← Back to DEXTRA</a>
+    <a href="/" className="btn btn-primary">← Back to CHIRAVOX</a>
   </main>
 );
 
@@ -67,7 +67,7 @@ const AppShell = ({ showToast, children }) => (
 const HotkeyBadge = () => {
   const location = useLocation();
   const [hasUsed, setHasUsed] = useState(() => {
-    return localStorage.getItem('dextra_has_used_palette') === 'true';
+    return localStorage.getItem('chiravox_has_used_palette') === 'true';
   });
 
   useEffect(() => {
@@ -76,7 +76,7 @@ const HotkeyBadge = () => {
     const handleKeyDown = (e) => {
       if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
         setHasUsed(true);
-        localStorage.setItem('dextra_has_used_palette', 'true');
+        localStorage.setItem('chiravox_has_used_palette', 'true');
       }
     };
 

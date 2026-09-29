@@ -5,8 +5,8 @@ from pathlib import Path
 from typing import Dict, Any, List
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-SETTINGS_FILE = PROJECT_ROOT / "dextra_settings.json"
-GESTURES_FILE = PROJECT_ROOT / "dextra_custom_gestures.json"
+SETTINGS_FILE = PROJECT_ROOT / "chiravox_settings.json"
+GESTURES_FILE = PROJECT_ROOT / "chiravox_custom_gestures.json"
 
 DEFAULT_SETTINGS = {
     "camera_index": 0,

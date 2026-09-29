@@ -2,7 +2,7 @@ import unittest
 from gesture_mapping import GestureMapper
 from voice_mapping import match_command
 
-class TestDextraMappings(unittest.TestCase):
+class TestChiravoxMappings(unittest.TestCase):
     def test_voice_commands(self):
         # Testing exact matches
         self.assertEqual(match_command("scroll up"), "scroll up")
@@ -16,7 +16,7 @@ class TestDextraMappings(unittest.TestCase):
         
         # Testing substring matches
         self.assertEqual(match_command("please scroll down for me"), "scroll down")
-        self.assertEqual(match_command("hey dextra lock screen"), "lock screen")
+        self.assertEqual(match_command("hey chiravox lock screen"), "lock screen")
 
     def test_gesture_heuristics(self):
         mapper = GestureMapper()

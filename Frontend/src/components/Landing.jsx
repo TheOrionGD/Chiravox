@@ -336,15 +336,15 @@ export default function Landing() {
                   className="w-12 h-12 flex items-center justify-center z-10"
                 >
                   <img 
-                    src="/dextra-icon.png" 
-                    alt="DEXTRA" 
+                    src="/chiravox-icon.png" 
+                    alt="CHIRAVOX" 
                     className="w-10 h-10 object-contain filter drop-shadow-[0_4px_12px_rgba(140,192,235,0.55)]" 
                   />
                 </motion.div>
               </div>
               
               <h2 className="mt-8 text-2xl font-bold tracking-tight text-slate-800 font-heading">
-                DEXTRA
+                CHIRAVOX
               </h2>
               <p className="mt-2 text-sm font-medium text-slate-500 tracking-widest uppercase">
                 Initializing Intelligence
@@ -461,7 +461,7 @@ export default function Landing() {
                   <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#8CC0EB]"></span>
                 </span>
                 <span className="text-xs font-bold text-[#546e8a] uppercase tracking-wider">
-                  DEXTRA OS CONTROLLER • v1.0
+                  CHIRAVOX OS CONTROLLER • v1.0
                 </span>
               </motion.div>
 
@@ -691,7 +691,7 @@ export default function Landing() {
               <h2 className="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-800 font-heading mb-6 leading-tight">
                 Empower Your Interface.<br />
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-slate-800 via-[#5A9ED6] to-[#8CC0EB]">
-                  Experience DEXTRA.
+                  Experience CHIRAVOX.
                 </span>
               </h2>
               <p className="text-base md:text-lg text-slate-600 leading-relaxed mb-10">
@@ -755,7 +755,7 @@ export default function Landing() {
               Complete Control Dashboard
             </h2>
             <p className="text-base text-slate-500 leading-relaxed">
-              DEXTRA is packed with features designed to build the ultimate customizable touchless OS workflow.
+              CHIRAVOX is packed with features designed to build the ultimate customizable touchless OS workflow.
             </p>
           </div>
 
@@ -888,7 +888,7 @@ export default function Landing() {
                       <div className="mt-4 p-4 rounded-xl bg-slate-900 text-slate-200 font-mono text-xs space-y-2 border border-slate-800">
                         <p className="text-slate-500">// Terminal voice engine monitoring</p>
                         <p><span className="text-green-400">[INFO]</span> Speech Daemon loaded successfully (Whisper-Tiny-en)</p>
-                        <p><span className="text-blue-400">[LISTENING]</span> Wait-Word target: "Hey Dextra"</p>
+                        <p><span className="text-blue-400">[LISTENING]</span> Wait-Word target: "Hey Chiravox"</p>
                         <p><span className="text-cyan-400">[COMMAND]</span> "Open Terminal" detected → Executing: <span className="text-yellow-400">PowerShell -NoExit</span></p>
                       </div>
                     </motion.div>
@@ -1016,7 +1016,7 @@ export default function Landing() {
                 Launch System in Seconds
               </h2>
               <p className="text-sm text-slate-500 leading-relaxed">
-                Setting up DEXTRA on your system requires Python 3.9+ and dependencies. Download, initialize, and immediately control your viewport.
+                Setting up CHIRAVOX on your system requires Python 3.9+ and dependencies. Download, initialize, and immediately control your viewport.
               </p>
 
               <div className="space-y-4">
@@ -1048,8 +1048,8 @@ export default function Landing() {
               <div className="font-mono text-xs md:text-sm text-slate-300 space-y-4">
                 <div>
                   <span className="text-slate-500"># 1. Clone repository and navigate to folder</span>
-                  <p className="text-cyan-400 mt-1">git clone https://github.com/Orion/dextra.git</p>
-                  <p className="text-cyan-400">cd dextra</p>
+                  <p className="text-cyan-400 mt-1">git clone https://github.com/Orion/chiravox.git</p>
+                  <p className="text-cyan-400">cd chiravox</p>
                 </div>
 
                 <div>
@@ -1089,7 +1089,7 @@ export default function Landing() {
               <div className="flex items-center gap-2">
                 <span className="text-2xl">🤚</span>
                 <span className="font-heading font-extrabold text-xl tracking-tight text-white">
-                  DEXTRA
+                  CHIRAVOX
                 </span>
               </div>
               <p className="text-sm text-slate-400 max-w-sm leading-relaxed">
@@ -1141,7 +1141,7 @@ export default function Landing() {
           </div>
 
           <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
-            <p>© {new Date().getFullYear()} DEXTRA Controller Project. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} CHIRAVOX Controller Project. All rights reserved.</p>
             <div className="flex gap-6">
               <a href="#" className="hover:text-slate-300">Privacy Policy</a>
               <a href="#" className="hover:text-slate-300">License Terms</a>

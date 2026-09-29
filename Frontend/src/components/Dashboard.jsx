@@ -114,7 +114,7 @@ const Dashboard = () => {
             </div>
             <h2 className="text-2xl font-bold text-center text-slate-800 mb-3" style={{ margin: '0 0 12px 0' }}>Hardware Access Required</h2>
             <p className="text-center text-slate-600 mb-8 leading-relaxed" style={{ marginBottom: '32px' }}>
-              DEXTRA needs to access your Camera and Microphone to track hand gestures and listen for voice commands. Everything is processed locally and securely.
+              CHIRAVOX needs to access your Camera and Microphone to track hand gestures and listen for voice commands. Everything is processed locally and securely.
             </p>
             <div className="flex gap-4" style={{ display: 'flex', gap: '16px' }}>
               <button 
@@ -162,11 +162,11 @@ const Dashboard = () => {
           v1.0 — Powered by MediaPipe · React · FastAPI
         </div>
 
-        <div className="hero-orb" role="img" aria-label="DEXTRA logo">
-          <img src="/dextra-icon.png" alt="DEXTRA" style={{ width: '100px', height: '100px', objectFit: 'contain', filter: 'drop-shadow(0 6px 20px rgba(140,192,235,0.70))' }} />
+        <div className="hero-orb" role="img" aria-label="CHIRAVOX logo">
+          <img src="/chiravox-icon.png" alt="CHIRAVOX" style={{ width: '100px', height: '100px', objectFit: 'contain', filter: 'drop-shadow(0 6px 20px rgba(140,192,235,0.70))' }} />
         </div>
 
-        <h1>DEXTRA</h1>
+        <h1>CHIRAVOX</h1>
         <p className="dash-hero-sub">
           Gesture-driven computing reimagined. Control every mouse action, window, and system
           shortcut using only your hand and voice — no extra hardware required.

@@ -1,5 +1,5 @@
 # ==============================================================================
-# DEXTRA PROJECT FILE: python/camera.py
+# CHIRAVOX PROJECT FILE: python/camera.py
 # ==============================================================================
 #
 # Developer Assigned: Salman (Core Gesture & Tracking Engine)
@@ -28,11 +28,11 @@ except ImportError:  # pragma: no cover - exercised only on machines without Ope
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_SETTINGS_PATH = PROJECT_ROOT / "dextra_settings.json"
+DEFAULT_SETTINGS_PATH = PROJECT_ROOT / "chiravox_settings.json"
 
 
 class CameraError(RuntimeError):
-    """Base error raised by the DEXTRA camera module."""
+    """Base error raised by the CHIRAVOX camera module."""
 
 
 class CameraOpenError(CameraError):
@@ -162,7 +162,7 @@ class CameraStream:
             self.release()
             raise CameraOpenError(
                 f"Could not open camera index {self.settings.camera_index}. "
-                "Check dextra_settings.json or close apps already using the webcam."
+                "Check chiravox_settings.json or close apps already using the webcam."
             )
 
         self._set_capture_property(cv.CAP_PROP_FRAME_WIDTH, self.settings.width)
@@ -261,7 +261,7 @@ def _run_smoke_check(frame_count: int) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="DEXTRA OpenCV camera smoke check")
+    parser = argparse.ArgumentParser(description="CHIRAVOX OpenCV camera smoke check")
     parser.add_argument("--frames", type=int, default=30, help="Number of frames to capture")
     args = parser.parse_args()
     _run_smoke_check(max(1, args.frames))

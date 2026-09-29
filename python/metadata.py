@@ -55,7 +55,7 @@ VOICE_CMD_CATEGORIES = [
            'task manager', 'open terminal', 'open notepad', 'open calculator'],
   },
   {
-    "title": '🤚 DEXTRA Control',
+    "title": '🤚 CHIRAVOX Control',
     "cmds": ['start listening', 'stop listening', 'open trainer', 'open settings',
            'toggle gestures', 'calibrate', 'help'],
   },

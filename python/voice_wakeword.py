@@ -45,7 +45,7 @@ def activate():
 
     system_active = True
 
-    print("DEXTRA ACTIVE")
+    print("CHIRAVOX ACTIVE")
 
     # Example:
     # requests.post("http://localhost:8000/activate")

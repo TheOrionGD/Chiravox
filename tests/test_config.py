@@ -28,8 +28,8 @@ class TestSettingsManager(unittest.TestCase):
 
     def test_update_settings(self):
         with tempfile.TemporaryDirectory() as temp_dir:
-            settings_path = Path(temp_dir) / "dextra_settings.json"
-            gestures_path = Path(temp_dir) / "dextra_custom_gestures.json"
+            settings_path = Path(temp_dir) / "chiravox_settings.json"
+            gestures_path = Path(temp_dir) / "chiravox_custom_gestures.json"
 
             with patch("config.SETTINGS_FILE", settings_path), \
                  patch("config.GESTURES_FILE", gestures_path):
@@ -43,8 +43,8 @@ class TestSettingsManager(unittest.TestCase):
 
     def test_custom_gestures_crud(self):
         with tempfile.TemporaryDirectory() as temp_dir:
-            settings_path = Path(temp_dir) / "dextra_settings.json"
-            gestures_path = Path(temp_dir) / "dextra_custom_gestures.json"
+            settings_path = Path(temp_dir) / "chiravox_settings.json"
+            gestures_path = Path(temp_dir) / "chiravox_custom_gestures.json"
 
             with patch("config.SETTINGS_FILE", settings_path), \
                  patch("config.GESTURES_FILE", gestures_path):
@@ -61,8 +61,8 @@ class TestSettingsManager(unittest.TestCase):
 
     def test_corrupted_json_fallback(self):
         with tempfile.TemporaryDirectory() as temp_dir:
-            settings_path = Path(temp_dir) / "dextra_settings.json"
-            gestures_path = Path(temp_dir) / "dextra_custom_gestures.json"
+            settings_path = Path(temp_dir) / "chiravox_settings.json"
+            gestures_path = Path(temp_dir) / "chiravox_custom_gestures.json"
             settings_path.write_text("INVALID JSON", encoding="utf-8")
             gestures_path.write_text("CORRUPT DATA", encoding="utf-8")
 

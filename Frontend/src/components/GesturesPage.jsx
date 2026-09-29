@@ -35,7 +35,7 @@ const GesturesPage = () => {
         <div className="section-icon" aria-hidden="true">🤚</div>
         <div>
           <h1>Gesture Library</h1>
-          <p style={{ margin: 0 }}>All {gestures.length} built-in and custom DEXTRA gestures.</p>
+          <p style={{ margin: 0 }}>All {gestures.length} built-in and custom CHIRAVOX gestures.</p>
         </div>
       </div>
 

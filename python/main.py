@@ -19,18 +19,18 @@ console = Console()
 
 def print_banner():
     banner = """
-[bold cyan]██████╗ ███████╗██╗  ██╗████████╗██████╗  █████╗ 
-██╔══██╗██╔════╝╚██╗██╔╝╚══██╔══╝██╔══██╗██╔══██╗
-██║  ██║█████╗   ╚███╔╝    ██║   ██████╔╝███████║
-██║  ██║██╔══╝   ██╔██╗    ██║   ██╔══██╗██╔══██║
-██████╔╝███████╗██╔╝ ██╗   ██║   ██║  ██║██║  ██║
-╚═════╝ ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝[/bold cyan]
+[bold cyan] ██████╗██╗  ██╗██╗██████╗  █████╗ ██╗   ██╗ ██████╗ ██╗  ██╗
+██╔════╝██║  ██║██║██╔══██╗██╔══██╗██║   ██║██╔═══██╗╚██╗██╔╝
+██║     ███████║██║██████╔╝███████║██║   ██║██║   ██║ ╚███╔╝ 
+██║     ██╔══██║██║██╔══██╗██╔══██║╚██╗ ██╔╝██║   ██║ ██╔██╗ 
+╚██████╗██║  ██║██║██║  ██║██║  ██║ ╚████╔╝ ╚██████╔╝██╔╝ ██╗
+ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚═╝  ╚═╝  ╚═══╝   ╚═════╝ ╚═╝  ╚═╝[/bold cyan]
 [bold white]Control Without Contact[/bold white]
     """
-    console.print(Panel(banner, title="DEXTRA System Launcher", border_style="cyan"))
+    console.print(Panel(banner, title="CHIRAVOX System Launcher", border_style="cyan"))
 
 def start_all():
-    console.print("[green]Starting DEXTRA Services in Standby Mode...[/green]")
+    console.print("[green]Starting CHIRAVOX Services in Standby Mode...[/green]")
     console.print("[yellow]Waiting for frontend permission to activate Camera & Microphone.[/yellow]")
     
     console.print("[green]Starting FastAPI Backend Server on port 8000...[/green]")
@@ -38,7 +38,7 @@ def start_all():
     uvicorn.run(app, host="0.0.0.0", port=8000)
 
 def main():
-    parser = argparse.ArgumentParser(description="DEXTRA CLI Launcher")
+    parser = argparse.ArgumentParser(description="CHIRAVOX CLI Launcher")
     parser.add_argument("--gui", action="store_true", help="Run only the GUI server")
     parser.add_argument("--mouse", action="store_true", help="Run only the gesture mouse tracker")
     parser.add_argument("--voice", action="store_true", help="Run only the voice commands listener")

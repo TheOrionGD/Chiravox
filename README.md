@@ -1,14 +1,14 @@
-<center> <img src="./Frontend/public/dextra-icon.png" alt="Dextra" width="350" height="380"/> </center>
+<center> <img src="./Frontend/public/chiravox-icon.png" alt="Chiravox" width="350" height="380"/> </center>
 
-# DEXTRA - Control Without Contact
+# CHIRAVOX - Control Without Contact
 
 ```
-██████╗ ███████╗██╗  ██╗████████╗██████╗  █████╗ 
-██╔══██╗██╔════╝╚██╗██╔╝╚══██╔══╝██╔══██╗██╔══██╗
-██║  ██║█████╗   ╚███╔╝    ██║   ██████╔╝███████║
-██║  ██║██╔══╝   ██╔██╗    ██║   ██╔══██╗██╔══██║
-██████╔╝███████╗██╔╝ ██╗   ██║   ██║  ██║██║  ██║
-╚═════╝ ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝
+ ██████╗██╗  ██╗██╗██████╗  █████╗ ██╗   ██╗ ██████╗ ██╗  ██╗
+██╔════╝██║  ██║██║██╔══██╗██╔══██╗██║   ██║██╔═══██╗╚██╗██╔╝
+██║     ███████║██║██████╔╝███████║██║   ██║██║   ██║ ╚███╔╝ 
+██║     ██╔══██║██║██╔══██╗██╔══██║╚██╗ ██╔╝██║   ██║ ██╔██╗ 
+╚██████╗██║  ██║██║██║  ██║██║  ██║ ╚████╔╝ ╚██████╔╝██╔╝ ██╗
+ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚═╝  ╚═╝  ╚═══╝   ╚═════╝ ╚═╝  ╚═╝
 ```
 
 > **Control Without Contact** · Gesture-Driven Computing, Reimagined
@@ -25,11 +25,11 @@
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97-Transformers-yellow.svg)](https://huggingface.co/docs/transformers/index)
 [![OpenCV](https://img.shields.io/badge/OpenCV-4.x-green.svg)](https://opencv.org/)
 [![PyAutoGUI](https://img.shields.io/badge/PyAutoGUI-0.9%2B-yellow.svg)](https://pyautogui.readthedocs.io/)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/TheOrionGD/Dextra/pulls)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/TheOrionGD/Chiravox/pulls)
 [![Build Status](https://img.shields.io/badge/Build-Passing-success.svg)](#)
 
 <!-- Developers & Contributors Badges -->
-[![Contributors](https://img.shields.io/github/contributors/TheOrionGD/Dextra?color=brightgreen&style=flat-square)](https://github.com/TheOrionGD/Dextra/graphs/contributors)
+[![Contributors](https://img.shields.io/github/contributors/TheOrionGD/Chiravox?color=brightgreen&style=flat-square)](https://github.com/TheOrionGD/Chiravox/graphs/contributors)
 [![Ideator - Harihar R](https://img.shields.io/badge/Ideator-Harihar%20R-gold?style=flat-square&logo=github)](https://github.com/HARIHAR1406)
 [![Core Lead - Mohamed Salman P](https://img.shields.io/badge/Core%20Gesture%20Lead-Mohamed%20Salman%20P-green?style=flat-square&logo=github)](https://github.com/Salman4256)
 [![Voice Lead - Logesh M](https://img.shields.io/badge/Voice%20Engine%20Lead-Logesh%20M-orange?style=flat-square&logo=github)](https://github.com/logeshM1)
@@ -60,14 +60,14 @@
 
 ## Executive Summary & Concept
 
-DEXTRA is a software solution that replaces the conventional computer mouse with real-time hand gesture recognition via a standard webcam. Using Google's MediaPipe framework for hand landmark detection, DEXTRA maps natural hand gestures to every standard mouse operation — including cursor movement, left and right clicking, double-clicking, drag-and-drop, and scrolling — without requiring specialized hardware depth cameras.
+CHIRAVOX is a software solution that replaces the conventional computer mouse with real-time hand gesture recognition via a standard webcam. Using Google's MediaPipe framework for hand landmark detection, CHIRAVOX maps natural hand gestures to every standard mouse operation — including cursor movement, left and right clicking, double-clicking, drag-and-drop, and scrolling — without requiring specialized hardware depth cameras.
 
-DEXTRA is further enhanced by:
+CHIRAVOX is further enhanced by:
 - **Voice Command Engine**: 40+ spoken commands across 6 categories powered by local Hugging Face transformer models (`openai/whisper-tiny`).
 - **Settings GUI**: A browser-based React SPA local control panel served by FastAPI.
 - **Gesture Trainer Module**: Allows users to record, name, and assign custom hand poses to OS shortcuts.
 
-**Key Value**: DEXTRA delivers a fully mouse-free computing experience using 22 hand gestures, 40+ voice commands, and a standard laptop webcam — no specialized hardware required.
+**Key Value**: CHIRAVOX delivers a fully mouse-free computing experience using 22 hand gestures, 40+ voice commands, and a standard laptop webcam — no specialized hardware required.
 
 ---
 
@@ -80,7 +80,7 @@ The physical mouse has remained the dominant pointing device for over four decad
 4. **AR/VR & Kiosk Environments**: Emerging interfaces have no surface on which a physical mouse can operate.
 5. **Fatigue & RSI**: Prolonged mouse use contributes to Repetitive Strain Injury.
 
-DEXTRA addresses all five scenarios simultaneously by providing a hygienic, natural, and hardware-free input alternative.
+CHIRAVOX addresses all five scenarios simultaneously by providing a hygienic, natural, and hardware-free input alternative.
 
 ---
 
@@ -92,7 +92,7 @@ DEXTRA addresses all five scenarios simultaneously by providing a hygienic, natu
 | :--- | :--- | :--- | :--- |
 | **Harihar R** (@HARIHAR1406) | System Ideator | System Concept & Architecture | Conceived initial vision and conceptual design for gesture-driven touchless computing. |
 | **Mohamed Salman P** (@Salman4256) | Core Gesture & Tracking Engine Lead | `python/camera.py`<br>`python/gesture_engine.py`<br>`python/gesture_mapping.py` | Video capture, MediaPipe 21 landmark detection, smoothing filter, PyAutoGUI mouse event binding. |
-| **Logesh M** (@logeshM1) | Voice Command Engine Lead | `python/voice_wakeword.py`<br>`python/voice_engine.py`<br>`python/voice_mapping.py` | Background audio capture, "DEXTRA" wakeword monitor, Hugging Face Whisper ASR transcription, shortcut mapper. |
+| **Logesh M** (@logeshM1) | Voice Command Engine Lead | `python/voice_wakeword.py`<br>`python/voice_engine.py`<br>`python/voice_mapping.py` | Background audio capture, "CHIRAVOX" wakeword monitor, Hugging Face Whisper ASR transcription, shortcut mapper. |
 | **Muthamil V** (@muthamil13) | FastAPI Backend GUI Server Lead | `python/config.py`<br>`python/gui_server.py`<br>`python/main.py` | File lock thread safety on config JSONs, FastAPI REST & WebSockets JPEG stream, system CLI launcher menu. |
 | **Godfrey T R** (@TheOrionGD) | React Settings & Trainer SPA Lead | `Frontend/` React Application | Vite React SPA layout, WebSocket HTML5 Canvas video feed renderer, voice controller status component, form bindings. |
 
@@ -100,7 +100,7 @@ DEXTRA addresses all five scenarios simultaneously by providing a hygienic, natu
 
 ## System Architecture & Data Flow
 
-DEXTRA's architecture separates tasks into distinct background daemon threads. Visual tracking, speech transcription, configuration management, and the API server run concurrently, sharing state via configuration files and thread-safe queues.
+CHIRAVOX's architecture separates tasks into distinct background daemon threads. Visual tracking, speech transcription, configuration management, and the API server run concurrently, sharing state via configuration files and thread-safe queues.
 
 ```
 +------------------+     +--------------------+     +-------------------+
@@ -124,11 +124,11 @@ graph TD
     D -->|Coordinate Smoothing| E{PyAutoGUI Event}
     
     F[Mic Stream sounddevice] --> G(python/voice_wakeword.py)
-    G -->|Trigger: 'DEXTRA'| H(python/voice_engine.py)
+    G -->|Trigger: 'CHIRAVOX'| H(python/voice_engine.py)
     H -->|ASR Whisper Transcription| I(python/voice_mapping.py)
     I -->|Keyboard Hotkeys| E
     
-    J(python/config.py) -->|Thread Lock Settings| K[dextra_settings.json]
+    J(python/config.py) -->|Thread Lock Settings| K[chiravox_settings.json]
     K -->|Read Thresholds| D
     K -->|Read Wakeword Config| G
     
@@ -152,13 +152,13 @@ graph TD
 ## Folder & Component Structure
 
 ```
-Dextra/
+Chiravox/
 ├── README.md                        # Primary documentation & architecture guide
 ├── LICENSE                          # MIT open-source license
-├── dextra_settings.json             # System configurations and thresholds database
-├── dextra_custom_gestures.json      # Saved custom trained hand poses database
+├── chiravox_settings.json             # System configurations and thresholds database
+├── chiravox_custom_gestures.json      # Saved custom trained hand poses database
 ├── requirements.txt                 # Python dependencies manifest
-├── run_dextra.ps1                   # PowerShell automated launcher script
+├── run_chiravox.ps1                   # PowerShell automated launcher script
 ├── python/                          # Python backend daemon files
 │   ├── main.py                      (CLI launcher interface & menu)
 │   ├── config.py                    (Thread-safe settings manager)
@@ -195,7 +195,7 @@ Dextra/
 
 ## Core Gesture Engine & Gesture Catalog
 
-DEXTRA tracks 21 3D coordinates on the hand, using landmark spatial relationships to classify gestures.
+CHIRAVOX tracks 21 3D coordinates on the hand, using landmark spatial relationships to classify gestures.
 
 ```
        8   12  16  20
@@ -260,7 +260,7 @@ DEXTRA tracks 21 3D coordinates on the hand, using landmark spatial relationship
 
 ## Voice Command Engine & Command Catalog
 
-DEXTRA transcribes speech locally using Hugging Face's `transformers` library (`openai/whisper-tiny`).
+CHIRAVOX transcribes speech locally using Hugging Face's `transformers` library (`openai/whisper-tiny`).
 
 ### 40+ Voice Commands Catalog
 
@@ -271,7 +271,7 @@ DEXTRA transcribes speech locally using Hugging Face's `transformers` library (`
 | **Window & Tab** | `"close tab"`, `"new tab"`, `"reopen tab"`, `"next tab"`, `"previous tab"`, `"new window"`, `"close window"`, `"switch window"`, `"minimize"`, `"maximize"`, `"restore"`, `"task view"`, `"snap left"`, `"snap right"` |
 | **Media & Volume** | `"volume up"`, `"volume down"`, `"mute"`, `"unmute"`, `"play"`, `"pause"`, `"play pause"`, `"next track"`, `"previous track"`, `"fullscreen"`, `"exit fullscreen"` |
 | **System & Apps** | `"screenshot"`, `"open explorer"`, `"show desktop"`, `"lock screen"`, `"open settings"`, `"task manager"`, `"open notepad"`, `"open calculator"` |
-| **DEXTRA Control** | `"start listening"`, `"stop listening"`, `"open trainer"`, `"open settings"`, `"toggle gestures"`, `"calibrate"`, `"help"` |
+| **CHIRAVOX Control** | `"start listening"`, `"stop listening"`, `"open trainer"`, `"open settings"`, `"toggle gestures"`, `"calibrate"`, `"help"` |
 
 ---
 
@@ -290,7 +290,7 @@ The Gesture Trainer features a real-time HTML5 Canvas preview fed via WebSockets
 1. Hold a custom hand posture in front of the webcam.
 2. Observe live 5-finger extended/curled state indicators.
 3. Enter a custom gesture name and map it to a system action.
-4. Hit Record (3-second countdown) to save custom postures to `dextra_custom_gestures.json`.
+4. Hit Record (3-second countdown) to save custom postures to `chiravox_custom_gestures.json`.
 
 ---
 
@@ -298,7 +298,7 @@ The Gesture Trainer features a real-time HTML5 Canvas preview fed via WebSockets
 
 ### REST API Endpoints
 - `GET /health` -> `{"status": "ok"}`
-- `GET /settings` -> Returns `dextra_settings.json` parameters.
+- `GET /settings` -> Returns `chiravox_settings.json` parameters.
 - `POST /settings` -> Persists updated configuration options.
 - `GET /gestures` -> Returns list of saved custom gestures.
 - `POST /gestures` -> Saves a new custom gesture payload.
@@ -316,7 +316,7 @@ The Gesture Trainer features a real-time HTML5 Canvas preview fed via WebSockets
 
 ## Configuration Schema
 
-### `dextra_settings.json`
+### `chiravox_settings.json`
 ```json
 {
   "camera_index": 0,
@@ -351,14 +351,14 @@ The Gesture Trainer features a real-time HTML5 Canvas preview fed via WebSockets
 
 ### Quick Start (Automated PowerShell Script)
 ```powershell
-.\run_dextra.ps1
+.\run_chiravox.ps1
 ```
 
 ### Manual Installation Steps
 ```bash
 # 1. Clone repository
-git clone https://github.com/your-org/Dextra.git
-cd Dextra
+git clone https://github.com/your-org/Chiravox.git
+cd Chiravox
 
 # 2. Set up Python virtual environment & dependencies
 python -m venv .venv
@@ -371,7 +371,7 @@ npm install
 npm run build
 cd ..
 
-# 4. Launch DEXTRA Launcher Menu
+# 4. Launch CHIRAVOX Launcher Menu
 python python/main.py
 ```
 
@@ -435,4 +435,4 @@ npm test
 - **Godfrey T R** (`@TheOrionGD`) — React Settings & Trainer SPA Lead
 
 ### License
-DEXTRA is open-source software released under the terms of the [MIT License](file:///o:/PROJECTS/Dextra/LICENSE).
+CHIRAVOX is open-source software released under the terms of the [MIT License](file:///o:/PROJECTS/Chiravox/LICENSE).

@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import './Trainer.css';
 
 /**
- * DEXTRA Gesture Trainer Page
+ * CHIRAVOX Gesture Trainer Page
  *
  * - Live camera feed rendered on HTML5 <canvas> via WebSocket JPEG stream from WS /trainer/stream
  * - Real-time finger state detection display (extended / curled)
@@ -61,7 +61,7 @@ const Trainer = ({ showToast, showBackendAlert }) => {
       const statusRes = await fetch(`${API}/api/system-status`);
       const status = await statusRes.json();
       if (status.engine === 'Standby') {
-        const consent = window.confirm("DEXTRA needs your permission to activate the Camera and Microphone hardware for the gesture trainer. Allow access?");
+        const consent = window.confirm("CHIRAVOX needs your permission to activate the Camera and Microphone hardware for the gesture trainer. Allow access?");
         if (!consent) return;
         
         await fetch(`${API}/api/engines/start`, { method: 'POST' });

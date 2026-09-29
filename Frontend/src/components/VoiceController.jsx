@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import './VoiceController.css';
 
 /**
- * DEXTRA PROJECT FILE: gui/src/components/VoiceController.jsx
+ * CHIRAVOX PROJECT FILE: gui/src/components/VoiceController.jsx
  *
  * Voice Command Engine Interface
  * ─────────────────────────────
@@ -24,9 +24,9 @@ const WS_URL = 'ws://localhost:8000/voice/stream';
 const fmt = () => new Date().toLocaleTimeString('en-GB');
 
 const VoiceController = ({ showToast, showBackendAlert }) => {
-  const [wakeword, setWakeword]         = useState('DEXTRA');
+  const [wakeword, setWakeword]         = useState('CHIRAVOX');
   const [editingWw, setEditingWw]       = useState(false);
-  const [draftWw, setDraftWw]           = useState('DEXTRA');
+  const [draftWw, setDraftWw]           = useState('CHIRAVOX');
   const [micState, setMicState]         = useState('standby'); // 'standby' | 'listening' | 'wakeword'
   const [transcript, setTranscript]     = useState('');
   const [commandHistory, setCommandHistory] = useState([]);
@@ -305,7 +305,7 @@ const VoiceController = ({ showToast, showBackendAlert }) => {
                     className="form-input"
                     value={draftWw}
                     onChange={e => setDraftWw(e.target.value.toUpperCase())}
-                    placeholder="e.g. DEXTRA"
+                    placeholder="e.g. CHIRAVOX"
                     maxLength={20}
                     onKeyDown={e => e.key === 'Enter' && saveWakeword()}
                     autoFocus

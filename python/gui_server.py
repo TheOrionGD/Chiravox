@@ -162,7 +162,7 @@ if os.path.exists(FRONTEND_DIR):
     app.mount("/", StaticFiles(directory=FRONTEND_DIR, html=True), name="static")
 
 if __name__ == "__main__":
-    print("Starting DEXTRA FastAPI Server...")
+    print("Starting CHIRAVOX FastAPI Server...")
     uvicorn.run(app, host="0.0.0.0", port=8000)
 
 

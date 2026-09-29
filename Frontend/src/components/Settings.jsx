@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 import './Settings.css';
 
 /**
- * DEXTRA Settings Page
+ * CHIRAVOX Settings Page
  * 
  * Reads from GET /settings and writes via POST /settings.
  * Falls back to local defaults when the backend is not reachable.
@@ -196,8 +196,8 @@ const Settings = ({ showToast, showBackendAlert }) => {
         </div>
       </div>
       <p className="settings-intro">
-        Tune every parameter of the DEXTRA gesture engine. Changes are sent to{' '}
-        <code>POST /settings</code> and persisted in <code>dextra_settings.json</code>.
+        Tune every parameter of the CHIRAVOX gesture engine. Changes are sent to{' '}
+        <code>POST /settings</code> and persisted in <code>chiravox_settings.json</code>.
       </p>
 
       {/* ── Camera ── */}
@@ -312,7 +312,7 @@ const Settings = ({ showToast, showBackendAlert }) => {
           <div className="section-icon" aria-hidden="true">🔧</div>
           <div>
             <div className="section-title">Feature Toggles</div>
-            <div className="section-subtitle">Enable or disable DEXTRA modules</div>
+            <div className="section-subtitle">Enable or disable CHIRAVOX modules</div>
           </div>
         </div>
 
@@ -321,7 +321,7 @@ const Settings = ({ showToast, showBackendAlert }) => {
             {
               key: 'voice_commands_enabled',
               title: '🎙️ Voice Commands',
-              desc: 'Background Whisper STT engine — listens for "DEXTRA" wakeword',
+              desc: 'Background Whisper STT engine — listens for "CHIRAVOX" wakeword',
             },
             {
               key: 'gesture_trainer_enabled',

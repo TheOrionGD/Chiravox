@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './BackendOfflineModal.css';
 
 /**
- * DEXTRA BackendOfflineModal
+ * CHIRAVOX BackendOfflineModal
  * 
  * Displayed whenever a user performs an action, clicks a button, or triggers a process
  * that requests backend endpoints (e.g., Save Settings, Connect Camera, Start Voice Engine)
@@ -65,7 +65,7 @@ const BackendOfflineModal = ({ isOpen, onClose, actionMessage }) => {
             </p>
           ) : null}
           <p style={{ margin: '0 0 10px 0' }}>
-            The requested action relies on the DEXTRA Python backend server, which is currently inactive or has not been started yet.
+            The requested action relies on the CHIRAVOX Python backend server, which is currently inactive or has not been started yet.
           </p>
           <p style={{ margin: 0, color: '#a3c1dd', fontSize: '0.88rem' }}>
             To enable real-time MediaPipe AI tracking, WebSocket camera streams, Whisper voice commands, and settings persistence, start the backend engine:

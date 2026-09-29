@@ -59,8 +59,8 @@ const CommandPalette = ({ showToast, showBackendAlert }) => {
       } catch {
         setBackendStatus('Offline');
         // read local storage
-        const localSmooth = localStorage.getItem('dextra_smoothing');
-        const localThresh = localStorage.getItem('dextra_threshold');
+        const localSmooth = localStorage.getItem('chiravox_smoothing');
+        const localThresh = localStorage.getItem('chiravox_threshold');
         if (localSmooth) setSmoothing(Number(localSmooth));
         if (localThresh) setThreshold(Number(localThresh));
       }
@@ -72,7 +72,7 @@ const CommandPalette = ({ showToast, showBackendAlert }) => {
   }, [isOpen]);
 
   const saveSetting = async (key, value) => {
-    localStorage.setItem(`dextra_${key}`, value.toString());
+    localStorage.setItem(`chiravox_${key}`, value.toString());
     try {
       const currentRes = await fetch(`${API}/settings`);
       let current = {};
@@ -414,7 +414,7 @@ const CommandPalette = ({ showToast, showBackendAlert }) => {
           </div>
           <div className="cmd-footer-status">
             <span className="cmd-footer-status-dot" style={{ background: backendStatus === 'Online' ? '#27ae60' : backendStatus === 'Pinging...' ? '#e67e22' : '#e74c3c' }} />
-            DEXTRA Backend: {backendStatus} (Smoothing: {smoothing}f)
+            CHIRAVOX Backend: {backendStatus} (Smoothing: {smoothing}f)
           </div>
         </div>
       </div>
